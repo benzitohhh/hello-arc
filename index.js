@@ -2,7 +2,7 @@ var React    = require('react'),
     ReactDOM = require('react-dom')
 ;
 
-var RADIUS = 60;
+var RADIUS = 120;
 var VALUE = 0.8;
 
 function get_height(k, r) {
@@ -34,7 +34,7 @@ var Pipe = React.createClass({
     var large_arc = VALUE > 0.5 ? 1 : 0;
 
     return (
-      <svg>
+      <svg width="900" height="900">
         <g transform={'translate(' + RADIUS + ',' + RADIUS + ')'}>
           <circle r={RADIUS} fill="yellow"/>
 
@@ -50,7 +50,7 @@ var Pipe = React.createClass({
             />
           }
 
-          <circle r={RADIUS} fill="none" stroke="black" stroke-width="1.5"/>
+          <circle r={RADIUS} fill="none" stroke="green" stroke-width="1.5"/>
         </g>
       </svg>
     );
